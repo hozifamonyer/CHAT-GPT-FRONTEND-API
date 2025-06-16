@@ -1,0 +1,98 @@
+body, button, input {
+    margin: 0;
+    padding: 0;
+    color: white;
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(15, 27, 83);
+}
+
+#main-title {
+    font-size: 100px;
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.658);
+    height: 200px;
+    width: 700px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#word-input {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    padding: 0 20px;
+    color: black;
+}
+
+#submit-btn {
+    width: 160px;
+    height: 50px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(35, 104, 252);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: rgb(43, 72, 136);
+}
+
+.reply-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.658);
+    height: 400px;
+    width: 700px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+
+    /* إضافات لتحسين النص */
+    text-align: center;
+    /* توسيط النص داخل الصندوق */
+    word-wrap: break-word;
+    /* لف النص لو طلع طويل */
+
+    white-space: pre-wrap;
+    /* يحافظ على المسافات والفقرات */
+}
+
+#reply-content {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: 370px;
+    /* عشان يظل ضمن الحاوية */
+}
