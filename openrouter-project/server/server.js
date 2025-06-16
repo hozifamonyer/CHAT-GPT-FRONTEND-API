@@ -11,6 +11,7 @@ const port = 3000;
 // وسط التطبيق (middleware) لازم لتحليل JSON
 app.use(cors());
 app.use(express.json()); // **هذا السطر مهم**
+app.use(express.static("public"));
 
 const openai = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
